@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Del Mundo</title>
+    
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    
+    <link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" as="font"
+    crossorigin="crossorigin">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+    
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="icon" href="img/tierra.webp">
+    
+</head>
+<body>
+    
+    <header class="container_combo">
+        
+        <div class="container_links">
+            
+            <a class="link_c" href="../index.html">Inicio</a>
+            <a class="link_c" href="../RadioButtons/radiobuttons.html">RadioButton</a>
+            <a class="link_c hover" href="combobox.html">ComboBox</a>
+            <a class="link_c" href="../cotizador/cotizador.html">Cotizador</a>
+            
+        </div>
+        
+        <div class="header">
+            
+            <div class="contenedor_header">
+                
+                <h1 class="titulo_c">Quiz del Mundo</h1>
+                <p>Descubre tu nivel geográfico con este Quiz</p>
+                
+            </div>
+            
+            <div class="contenedor_header">
+                
+                <img src="img/tierra.webp" alt="">
+                
+            </div>
+            
+        </div>
+        
+    </header>
+    
+    <main class="container_questions">
+
+        <h2 class="subtitle_combo">¡Responde las preguntas!</h2>
+        
+        <div class="container_question">
+            
+            <label class="question" for="q1">1. Bruselas, es la capital del país denominado... <span id="pregunta_1"></span><span id="retroalimentacion_1"></span></label>
+            <p id="word_1" class="word_text"></p>
+
+            <select class="container_options" name="bruselas" id="q1" >|
+                
+                <option value="">Selecciona una opción</option>
+                <option value="0">Guatemala</option>
+                <option value="1">Bélgica</option>
+                <option value="0">Buenos Aires</option>
+                <option value="0">Puerto Rico</option>
+                
+            </select>
+            
+        </div>
+        
+        <div class="container_question">
+            
+            <label class="question" for="q2">2. La capital de Argentina es... <span id="pregunta_2"></span><span id="retroalimentacion_2"></span></label>
+            <p id="word_2" class="word_text"></p>
+
+            <select class="container_options" name="argentina" id="q2">
+                
+                <option value="">Selecciona una opción</option>
+                <option value="0">Guatemala</option>
+                <option value="0">Belmopan</option>
+                <option value="1">Buenos Aires</option>
+                <option value="0">Puerto Rico</option>
+                
+            </select>
+            
+        </div>
+        
+        <div class="container_question">
+            
+            <label class="question" for="q3">3. San Juan es la capital de... <span id="pregunta_3"></span><span id="retroalimentacion_3"></span></label>
+            <p id="word_3" class="word_text"></p>
+
+            <select class="container_options" name="sanjose" id="q3">
+                
+                <option value="">Selecciona una opción</option>
+                <option value="0">Brasil</option>
+                <option value="0">Argentina</option>
+                <option value="1">Puerto Rico</option>
+                <option value="0">Venezuela</option>
+                
+            </select>
+            
+        </div>
+        
+        <div class="container_question">
+            
+            <label class="question" for="q4">4. La capital de Venezuela es... <span id="pregunta_4"></span><span id="retroalimentacion_4"></span></label>
+            <p id="word_4" class="word_text"></p>
+
+            <select class="container_options" name="Venezuela" id="q4">
+                
+                <option value="">Selecciona una opción</option>
+                <option value="0">Tegucigalpa</option>
+                <option value="0">Managua</option>
+                <option value="0">Panamá</option>
+                <option value="1">Caracas</option>
+                
+            </select>
+            
+        </div>
+        
+        <div class="container_question">
+            
+            <label class="question" for="q5">5. Brasilia, es la capital del país... <span id="pregunta_5"></span><span id="retroalimentacion_5"></span></label>
+            <p id="word_5" class="word_text"></p>
+
+            <select class="container_options" name="brasilia" id="q5">
+                
+                <option value="">Selecciona una opción</option>
+                <option value="0">Colombia</option>
+                <option value="0">Ecuador</option>
+                <option value="1">Brasil</option>
+                <option value="0">Perú</option>
+                
+            </select>
+            
+        </div>
+        
+        <div class="container_question">
+            
+            <label class="question" for="q6">6. La capital de Perú es... <span id="pregunta_6"></span><span id="retroalimentacion_6"></span></label>
+            <p id="word_6" class="word_text"></p>
+
+            <select class="container_options" name="peru" id="q6">
+                
+                <option value="">Selecciona una opción</option>
+                <option value="0">Sucre</option>
+                <option value="0">Bogotá</option>
+                <option value="0">Montevideo</option>
+                <option value="1">Lima</option>
+                
+            </select>
+            
+        </div>
+        
+        <div class="container_question">
+            
+            <label class="question" for="q7">7. Puerto España es la capital de... <span id="pregunta_7"></span><span id="retroalimentacion_7"></span></label>
+            <p id="word_7" class="word_text"></p>
+
+            <select class="container_options" name="puertoE" id="q7">
+                
+                <option value="">Selecciona una opción</option>
+                <option value="0">Surinam</option>
+                <option value="0">Bolivia</option>
+                <option value="0">Brasil</option>
+                <option value="1">Trinidad y Tobago</option>
+                
+            </select>
+            
+        </div>
+        
+        <div class="container_question">
+            
+            <label class="question" for="q8">8. Cuba, país cuya capital es... <span id="pregunta_8"></span><span id="retroalimentacion_8"></span></label>
+            <p id="word_8" class="word_text"></p>
+
+            <select class="container_options" name="cuba" id="q8">
+                
+                <option value="">Selecciona una opción</option>
+                <option value="0">Kingston</option>
+                <option value="0">Santo Domingo</option>
+                <option value="1">La habana</option>
+                <option value="0">Castries</option>
+                
+            </select>
+            
+        </div>
+        
+        <div class="container_question">
+            
+            <label class="question" for="q9">9. Managua, es la capital que pertenece a... <span id="pregunta_9"></span><span id="retroalimentacion_9"></span></label>
+            <p id="word_9" class="word_text"></p>
+
+            <select class="container_options" name="managua" id="q9">
+                
+                <option value="">Selecciona una opción</option>
+                <option value="0">Panamá</option>
+                <option value="0">Honduras</option>
+                <option value="1">Nicaragua</option>
+                <option value="0">Belice</option>
+                
+            </select>
+            
+        </div>
+        
+        <div class="container_question">
+            
+            <label class="question" for="q10">10. Ecuador, tiene como capital... <span id="pregunta_10"></span><span id="retroalimentacion_10"></span></label>
+            <p id="word_10" class="word_text"></p>
+
+            <select class="container_options" name="ecuador" id="q10">
+                
+                <option value="">Selecciona una opción</option>
+                <option value="0">Parabarimo</option>
+                <option value="0">Montevideo</option>
+                <option value="0">Asunción</option>
+                <option value="1">Quito</option>
+                
+            </select>
+            
+        </div>
+        
+        <p id="parrafoR"></p>
+        
+        <button class="boton" onclick="respuestas()" id="calificar_c" >Calificar</button>
+        <button class="boton" onclick="btnLimpiar()" id="limpiar_c" >Limpiar</button>
+        
+    </main>
+
+    <footer class="footer_c">
+        <div class="footer_container">
+
+            <a href="" class="img_logos_upt">
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#0A2A1B" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                    <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                    <path d="M16.5 7.5l0 .01" />
+                  </svg>
+
+            </a>
+
+            <a class="cotizador_a" href="../index.html"><h2 class="titulo_t">Inicio<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="50" height="50" viewBox="0 0 24 24" stroke-width="1.5" stroke="#0A2A1B" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M5 12l-2 0l9 -9l9 9l-2 0" />
+                <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+                <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+              </svg></h2></a>
+
+            <a href="" class="logo img_logos_upt">
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#0A2A1B" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                  </svg>
+
+            </a>
+
+        </div>
+    </footer>
+    
+    <script src="js/script.js" ></script>
+    
+</body>
+</html>

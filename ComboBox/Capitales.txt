@@ -1,0 +1,14 @@
+USAR SOLO COMBOBOX
+1. Bruselas, es la capital del país denominado (Guatemala, Bélgica, Buenos Aires, Puerto Rico)
+2. La capital de Argentina es (Guatemala, Belmopan, Buenos Aires, Puerto Rico)
+3. San José es la capital de (Brasil, Argentina, Puerto Rico, Venezuela)
+4. La capital de Venezuela es (Tegucigalpa, Managua, Panamá, Caracas)
+5. Brasilia, es la capital del país (Colombia, Ecuador, Paraguay, Perú)
+6. La capital de Perú es (Sucre, Bogotá, Montevideo, Lima)
+7. Puerto España es la capital de (Surinam, Bolivia, Brasil, Trinidad y Tobago)
+8. Cuba, país cuya capital es (Kingston, Santo Domingo, La habana, Castries)
+9. Managua, es la capital que pertenece a (Panamá, Honduras, Nicaragua, Belice)
+10. Ecuador, tiene como capital (Parabarimo, Montevideo, Asunción, Quito)
+
+Imprimir: a) Puntuación obtenida, b) Una cruz o paloma por pregunta, 
+c) Realimentación (correcta - felicitación, incorrecta - Recuerda que...)

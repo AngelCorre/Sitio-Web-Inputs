@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizador</title>
+    
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    
+    <link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" as="font"
+    crossorigin="crossorigin">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+    
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="icon" href="img/torta.png">
+    
+</head>
+<body>
+    
+    <header class="container_t">
+        
+        <div class="container_links">
+            
+            <a class="link_t" href="../index.html">Inicio</a>
+            <a class="link_t" href="../RadioButtons/radiobuttons.html">RadioButton</a>
+            <a class="link_t" href="../ComboBox/combobox.html">ComboBox</a>
+            <a class="link_t hover" href="cotizador.html">Cotizador</a>
+            
+        </div>
+        
+        <div class="header">
+            
+            <div class="contenedor_header">
+                
+                <h1 class="titulo_t">Mega Tortas</h1>
+                <p>Prepara y ordena una torta a tu gusto</p>
+                
+            </div>
+            
+            <div class="contenedor_header">
+                
+                <img src="img/torta.png" alt="">
+                
+            </div>
+            
+        </div>
+        
+    </header>
+    
+    <main class="main_cotizador">
+        
+        
+        <h2 class="subtitle_t">Cotizador</h2>
+        
+        <form action="php/datos.php" method="POST">
+            
+            <div class="container">
+                
+                <div class="container_question">
+                    
+                    <p id="panes">Panes<span id="panes_1"></span></p>
+                    
+                    <select class="container_options" name="grupo_1" id="q1" >|
+                        
+                        <option value="">Selecciona una opción</option>
+                        <option value="0">Pan Blanco</option>
+                        <option value="3">Pan Integral</option>
+                        <option value="3">Pan de Ajo</option>
+                        
+                    </select>
+                    
+                </div>
+                
+                <!-- <div>
+                    
+                    <p id="panes">Panes <span id="panes_1"></span></p>
+                    
+                    <div class="ingrediente_container">
+                        <input type="radio" name="grupo_1" value="5" id="ingrediente_1">
+                        <label for="ingrediente_1">Pan Blanco</label><p class="precio"> - $5</p>
+                    </div>
+                    
+                    <div class="ingrediente_container">
+                        <input type="radio" name="grupo_1" value="10" id="ingrediente_2">
+                        <label for="ingrediente_2">Pan Integral</label><p class="precio"> - $10</p>
+                    </div>
+                    
+                    <div class="ingrediente_container">
+                        <input type="radio" name="grupo_1" value="15" id="ingrediente_3">
+                        <label for="ingrediente_3">Pan de Ajo</label><p class="precio"> - $15</p>
+                    </div>
+                    
+                </div> -->
+                
+                <div>
+                    
+                    <p id="quesos">Quesos<span id="quesos_1"></span></p>
+                    
+                    <div class="ingrediente_container">
+                        <input type="radio" name="grupo_2" value="0" id="ingrediente_4">
+                        <label for="ingrediente_4">Sin queso</label><p class="precio">  $0</p>
+                    </div>
+                    
+                    <div class="ingrediente_container">
+                        <input type="radio" name="grupo_2" value="5" id="ingrediente_5">
+                        <label for="ingrediente_5">Queso Oaxaca</label><p class="precio">  $5</p>
+                    </div>
+                    
+                    <div class="ingrediente_container">
+                        <input type="radio" name="grupo_2" value="5" id="ingrediente_6">
+                        <label for="ingrediente_6">Queso Chihuahua</label><p class="precio">  $5</p>
+                    </div>
+                    
+                    <div class="ingrediente_container">
+                        <input type="radio" name="grupo_2" value="10" id="ingrediente_7">
+                        <label for="ingrediente_7">Queso Manchego</label><p class="precio">  $10</p>
+                    </div>
+                    
+                    
+                </div>
+                
+                <div>
+                    
+                    <p id="papas">Papas<span id="papas_1"></span></p>
+                    
+                    <div class="ingrediente_container">
+                        <input type="radio" name="grupo_3" value="0" id="ingrediente_8">
+                        <label for="ingrediente_8">Sin papas</label><p class="precio">  $0</p>
+                    </div>
+                    
+                    <div class="ingrediente_container">
+                        <input type="radio" name="grupo_3" value="5" id="ingrediente_9">
+                        <label for="ingrediente_9">Papas Chicas</label><p class="precio">  $5</p>
+                    </div>
+                    
+                    <div class="ingrediente_container">
+                        <input type="radio" name="grupo_3" value="10" id="ingrediente_10">
+                        <label for="ingrediente_10">Papas Medianas</label><p class="precio">  $10</p>
+                    </div>
+                    
+                    <div class="ingrediente_container">
+                        <input type="radio" name="grupo_3" value="15" id="ingrediente_11">
+                        <label for="ingrediente_11"> Papas Grandes</label><p class="precio">  $15</p>
+                    </div>
+                    
+                </div>
+                
+                <div>
+                    
+                    <p id="aderezos">Aderezos<span id="aderezos_1"></span></p>
+                    
+                    <div class="ingrediente_container">
+                        <input type="radio" name="grupo_4" value="0" id="ingrediente_12">
+                        <label for="ingrediente_12">Aderezo de Mayonesa</label><p class="precio">  $0</p>
+                    </div>
+                    
+                    <div class="ingrediente_container">
+                        <input type="radio" name="grupo_4" value="5" id="ingrediente_13">
+                        <label for="ingrediente_13">Aderezo de Cebolla Dulce</label><p class="precio">  $5</p>
+                    </div>
+                    
+                    <div class="ingrediente_container">
+                        <input type="radio" name="grupo_4" value="5" id="ingrediente_14">
+                        <label for="ingrediente_14">Aderezo de Mostaza dulce</label><p class="precio">  $5</p>
+                    </div>
+                    
+                </div>
+                
+                <div>
+                    
+                    <p id="picante">Picante<span id="picante_1"></span></p>
+                    
+                    <div class="ingrediente_container">
+                        <input type="radio" name="grupo_5" value="0" id="ingrediente_15">
+                        <label for="ingrediente_15">Sin picante</label><p class="precio">  $0</p>
+                    </div>
+                    
+                    <div class="ingrediente_container">
+                        <input type="radio" name="grupo_5" value="3" id="ingrediente_16">
+                        <label for="ingrediente_16">Rajas</label><p class="precio">  $3</p>
+                    </div>
+                    
+                    <div class="ingrediente_container">
+                        <input type="radio" name="grupo_5" value="3" id="ingrediente_17">
+                        <label for="ingrediente_17">Chiles en vinagre</label><p class="precio">  $3</p>
+                    </div>
+                    
+                    <div class="ingrediente_container">
+                        <input type="radio" name="grupo_5" value="5" id="ingrediente_18">
+                        <label for="ingrediente_18">Chipotle</label><p class="precio">  $5</p>
+                    </div>
+                    
+                </div>
+                
+                <div>
+                    
+                    <p id="carnes">Carnes<span id="carnes_1"></span></p>
+                    
+                    <div class="ingrediente_container">
+                        <input type="checkbox" name="grupo_6[]" value="5" id="ingrediente_19">
+                        <label for="ingrediente_19">Carne de Milanesa</label><p class="precio">  $5</p>
+                    </div>
+                    
+                    <div class="ingrediente_container">
+                        <input type="checkbox" name="grupo_6[]" value="5" id="ingrediente_20">
+                        <label for="ingrediente_20">Carne de Pierna</label><p class="precio">  $5</p>
+                    </div>
+                    
+                    <div class="ingrediente_container">
+                        <input type="checkbox" name="grupo_6[]" value="5" id="ingrediente_21">
+                        <label for="ingrediente_21">Carne de Salchicha</label><p class="precio">  $5</p>
+                    </div>
+                    
+                    <div class="ingrediente_container">
+                        <input type="checkbox" name="grupo_6[]" value="5" id="ingrediente_22">
+                        <label for="ingrediente_22">Carne de Jamón</label><p class="precio">  $5</p>
+                    </div>
+                    
+                    <div class="ingrediente_container">
+                        <input type="checkbox" name="grupo_6[]" value="8" id="ingrediente_23">
+                        <label for="ingrediente_23">Carne de Lomo de Cerdo</label><p class="precio">  $8</p>
+                    </div>
+                    
+                </div>
+                
+                <div>
+                    
+                    <p id="vegetales">Vegetales<span id="vegetales_1"></span></p>
+                    
+                    <div class="ingrediente_container">
+                        <input type="checkbox" name="grupo_7[]" value="0" id="ingrediente_24">
+                        <label for="ingrediente_24">Sin vegetales</label><p class="precio">  $0</p>
+                    </div>
+                    
+                    <div class="ingrediente_container">
+                        <input type="checkbox" name="grupo_7[]" value="1" id="ingrediente_25">
+                        <label for="ingrediente_25">Cebolla</label><p class="precio">  $1</p>
+                    </div>
+                    
+                    <div class="ingrediente_container">
+                        <input type="checkbox" name="grupo_7[]" value="1" id="ingrediente_26">
+                        <label for="ingrediente_26">Tomate</label><p class="precio">  $1</p>
+                    </div>
+                    
+                    <div class="ingrediente_container">
+                        <input type="checkbox" name="grupo_7[]" value="1" id="ingrediente_27">
+                        <label for="ingrediente_27">Lechuga</label><p class="precio">  $1</p>
+                    </div>
+                    
+                    <div class="ingrediente_container">
+                        <input type="checkbox" name="grupo_7[]" value="3" id="ingrediente_28">
+                        <label for="ingrediente_28">Aguacate</label><p class="precio">  $3</p>
+                    </div>
+                    
+                </div>
+                
+                <div>
+                    
+                    <p id="extras">Extras<span id="extras_1"></span></p>
+                    
+                    <div class="ingredientes_container">
+                        
+                        <div class="ingrediente_container">
+                            <input type="checkbox" name="grupo_8[]" value="0" id="ingrediente_29">
+                            <label for="ingrediente_29">Sin extras</label><p class="precio">  $0</p>
+                        </div>
+                        
+                        <div class="ingrediente_container">
+                            <input type="checkbox" name="grupo_8[]" value="3" id="ingrediente_30">
+                            <label for="ingrediente_30">Frijoles</label><p class="precio">  $3</p>
+                        </div>
+                        
+                        <div class="ingrediente_container">
+                            <input type="checkbox" name="grupo_8[]" value="3" id="ingrediente_31">
+                            <label for="ingrediente_31">Piña</label><p class="precio">  $3</p>
+                        </div>
+                        
+                        <div class="ingrediente_container">
+                            <input type="checkbox" name="grupo_8[]" value="5" id="ingrediente_32">
+                            <label for="ingrediente_32">Tocino</label><p class="precio">  $5</p>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+
+                <textarea class="textarea_all" name="panSelec" id="panSelec" cols="1" rows="1"></textarea>
+            <textarea class="textarea_all" name="quesoSelec" id="quesoSelec" cols="1" rows="1"></textarea>
+            <textarea class="textarea_all" name="papaSelec" id="papaSelec" cols="1" rows="1"></textarea>
+            <textarea class="textarea_all" name="aderezoSelec" id="aderezoSelec" cols="1" rows="1"></textarea>
+            <textarea class="textarea_all" name="picanteSelec" id="picanteSelec" cols="1" rows="1"></textarea>
+            <textarea class="textarea_all" name="carneSelec" id="carneSelec" cols="1" rows="1"></textarea>
+            <textarea class="textarea_all" name="vegetalSelec" id="vegetalSelec" cols="1" rows="1"></textarea>
+            <textarea class="textarea_all" name="extraSelec" id="extraSelec" cols="1" rows="1"></textarea>
+                
+            </div>
+            
+            <div class="extras_container">
+                
+                <div class="cotizacion_container">
+                    
+                    <textarea class="cotizacion_1" name="cotizacion" id="cotizacion" cols="135" rows="4"></textarea>
+                    <!-- <p class="cotizacion_1" id="cotizacion"></p> -->
+                    <p class="Ssubtotal" id="Ssubtotal"></p>
+                    <p id="Siva"></p>
+                    <p id="total"></p>
+                    
+                </div>
+                
+                <div class="button_container">
+                    
+                    <input class="submit guardar" type="submit" value="Guardar">
+                    
+                </div>
+                
+            </div>
+            
+        </form>
+        
+        <div class="extras_container">
+            
+            <div class="button_container">
+                
+                <button class="boton cotizar" id="cotizar" >Cotizar</button>
+                <button class="boton limpiar" id="limpiar_t" >Limpiar</button>
+                <button class="boton eliminar" id="delete" onclick="location.href='php/delete/delete.html'" >Eliminar</button>
+                <button class="boton pdf" onclick="location.href='php/pdf/fpdfG.php'">PDF</button>
+                <button class="boton update" id="actualizar" onclick="location.href='php/actualizar/update.html'">Actualizar</button>
+                
+            </div>
+            
+        </div>
+        
+    </main>
+    
+    <footer class="footer_t">
+        
+        <!-- <div class="textareas"> -->
+            
+        <!-- </div> -->
+        
+        <div class="footer_container">
+            
+            <a href="" class="img_logos_upt">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#822900" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                    <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                    <path d="M16.5 7.5l0 .01" />
+                </svg>
+                
+            </a>
+            
+            <!-- <a class="cotizador_a" href="../index.html"><h2 class="titulo_t">Inicio<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="50" height="50" viewBox="0 0 24 24" stroke-width="1.5" stroke="#822900" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M5 12l-2 0l9 -9l9 9l-2 0" />
+                <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+                <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+              </svg></h2></a> -->
+
+              <a class="cotizador_a" href="cotizador.html"><h2 class="titulo_t">Cotizador<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chef-hat" width="50" height="50" viewBox="0 0 24 24" stroke-width="1.5" stroke="#822900" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M12 3c1.918 0 3.52 1.35 3.91 3.151a4 4 0 0 1 2.09 7.723l0 7.126h-12v-7.126a4 4 0 1 1 2.092 -7.723a4 4 0 0 1 3.908 -3.151z" />
+                <path d="M6.161 17.009l11.839 -.009" />
+            </svg></h2></a>
+            
+            <a href="" class="logo img_logos_upt">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#822900" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                </svg>
+                
+            </a>
+            
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Quiz</title>
+
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" as="font"
+        crossorigin="crossorigin">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/english.png">
+
+</head>
+
+<body>
+
+    <header class="container_radio">
+
+        <div class="container_links">
+
+            <a class="link_r" href="../index.html">Inicio</a>
+            <a class="link_r hover" href="radiobuttons.html">RadioButton</a>
+            <a class="link_r" href="../ComboBox/combobox.html">ComboBox</a>
+            <a class="link_r" href="../cotizador/cotizador.html">Cotizador</a>
+
+        </div>
+
+        <div class="header">
+
+            <div class="contenedor_header">
+
+                <h1 class="titulo_r">English Quiz<svg xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-language" width="60" height="60" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="#041562" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M4 5h7" />
+                        <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+                        <path d="M5 9c0 2.144 2.952 3.908 6.7 4" />
+                        <path d="M12 20l4 -9l4 9" />
+                        <path d="M19.1 18h-6.2" />
+                    </svg></h1>
+                <p>Our short English quiz, Test Your English</p>
+    
+            </div>
+    
+            <div class="contenedor_header">
+    
+                <img src="img/usa.jpg" alt="usa">
+    
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main class="main_container_r">
+
+        <div class="container">
+
+            <h2 class="subtitulo">Answer The Questions</h2>
+
+            <div class="question_container">
+                <p id="pregunta">1. Can I park here? <span id="pregunta_1"></span></p>
+
+                <div class="answer_container">
+                    <input type="radio" name="grupo_1" value="0" id="respuesta_1">
+                    <label for="respuesta_1">Sorry, I did that.</label>
+                </div>
+
+                <div class="answer_container">
+                    <input type="radio" name="grupo_1" value="0" id="respuesta_2">
+                    <label for="respuesta_2">It's the same place.</label>
+                </div>
+
+                <div class="answer_container">
+                    <input type="radio" name="grupo_1" value="1" id="respuesta_3">
+                    <label for="respuesta_3">Only for half an hour.</label>
+                </div>
+
+            </div>
+
+            <div class="question_container">
+                <p class="pregunta">2. What colour will you paint the children's bedroom? <span id="pregunta_2"></span>
+                </p>
+
+                <div class="answer_container">
+                    <input type="radio" name="grupo_2" value="0" id="respuesta_4">
+                    <label for="respuesta_4">I hope it was right.</label>
+                </div>
+
+                <div class="answer_container">
+                    <input type="radio" name="grupo_2" value="1" id="respuesta_5">
+                    <label for="respuesta_5">We can't decide.</label>
+                </div>
+
+                <div class="answer_container">
+                    <input type="radio" name="grupo_2" value="0" id="respuesta_6">
+                    <label for="respuesta_6">It wasn't very difficult.</label>
+                </div>
+
+            </div>
+
+            <div class="question_container">
+                <p class="pregunta">3. I can't understand this email. <span id="pregunta_3"></span></p>
+
+                <div class="answer_container">
+                    <input type="radio" name="grupo_3" value="1" id="respuesta_7">
+                    <label for="respuesta_7">Would you like some help?</label>
+                </div>
+
+                <div class="answer_container">
+                    <input type="radio" name="grupo_3" value="0" id="respuesta_8">
+                    <label for="respuesta_8">Don't you know?</label>
+                </div>
+
+                <div class="answer_container">
+                    <input type="radio" name="grupo_3" value="0" id="respuesta_9">
+                    <label for="respuesta_9">I suppose you can.</label>
+                </div>
+
+            </div>
+
+            <div class="question_container">
+                <p class="pregunta">4. I'd like two tickets for tomorrow night. <span id="pregunta_4"></span></p>
+
+                <div class="answer_container">
+                    <input type="radio" name="grupo_4" value="0" id="respuesta_10">
+                    <label for="respuesta_10">How much did you pay?</label>
+                </div>
+
+                <div class="answer_container">
+                    <input type="radio" name="grupo_4" value="0" id="respuesta_11">
+                    <label for="respuesta_11">Afternoon and evening.</label>
+                </div>
+
+                <div class="answer_container">
+                    <input type="radio" name="grupo_4" value="1" id="respuesta_12">
+                    <label for="respuesta_12">I'll just check for you.</label>
+                </div>
+
+            </div>
+
+            <div class="question_container">
+                <p class="pregunta">5. Shall we go to the gym now? <span id="pregunta_5"></span></p>
+
+                <div class="answer_container">
+                    <input type="radio" name="grupo_5" value="1" id="respuesta_13">
+                    <label for="respuesta_13">I'm too tired.</label>
+                </div>
+
+                <div class="answer_container">
+                    <input type="radio" name="grupo_5" value="0" id="respuesta_14">
+                    <label for="respuesta_14">It's very good.</label>
+                </div>
+
+                <div class="answer_container">
+                    <input type="radio" name="grupo_5" value="0" id="respuesta_15">
+                    <label for="respuesta_15">Not at all.</label>
+                </div>
+
+            </div>
+
+            <div class="question_container">
+                <p class="pregunta">6. His eyes were ...... bad that he couldn't read the number plate of the car in
+                    front. <span id="pregunta_6"></span></p>
+
+                <div class="answer_container">
+                    <input type="radio" name="grupo_6" value="0" id="respuesta_16">
+                    <label for="respuesta_16">such</label>
+                </div>
+
+                <div class="answer_container">
+                    <input type="radio" name="grupo_6" value="0" id="respuesta_17">
+                    <label for="respuesta_17">too</label>
+                </div>
+
+                <div class="answer_container">
+                    <input type="radio" name="grupo_6" value="1" id="respuesta_18">
+                    <label for="respuesta_18">very</label>
+                </div>
+
+            </div>
+
+            <div class="question_container">
+                <p class="pregunta">7. The company needs to decide ...... and for all what its position is on this
+                    point. <span id="pregunta_7"></span></p>
+
+                <div class="answer_container">
+                    <input type="radio" name="grupo_7" value="0" id="respuesta_19">
+                    <label for="respuesta_19">here</label>
+                </div>
+
+                <div class="answer_container">
+                    <input type="radio" name="grupo_7" value="1" id="respuesta_20">
+                    <label for="respuesta_20">first</label>
+                </div>
+
+                <div class="answer_container">
+                    <input type="radio" name="grupo_7" value="0" id="respuesta_21">
+                    <label for="respuesta_21">now</label>
+                </div>
+
+            </div>
+
+            <div class="question_container">
+                <p class="pregunta">8. Don't put your cup on the ...... of the table – someone will knock it off. <span
+                        id="pregunta_8"></span></p>
+
+                <div class="answer_container">
+                    <input type="radio" name="grupo_8" value="0" id="respuesta_22">
+                    <label for="respuesta_22">outside</label>
+                </div>
+
+                <div class="answer_container">
+                    <input type="radio" name="grupo_8" value="1" id="respuesta_23">
+                    <label for="respuesta_23">border</label>
+                </div>
+
+                <div class="answer_container">
+                    <input type="radio" name="grupo_8" value="0" id="respuesta_24">
+                    <label for="respuesta_24">boundary</label>
+                </div>
+
+            </div>
+
+            <div class="question_container">
+                <p class="pregunta">9. I'm sorry - I didn't ...... to disturb you. <span id="pregunta_9"></span></p>
+
+                <div class="answer_container">
+                    <input type="radio" name="grupo_9" value="0" id="respuesta_25">
+                    <label for="respuesta_25">hope</label>
+                </div>
+
+                <div class="answer_container">
+                    <input type="radio" name="grupo_9" value="0" id="respuesta_26">
+                    <label for="respuesta_26">thought</label>
+                </div>
+
+                <div class="answer_container">
+                    <input type="radio" name="grupo_9" value="1" id="respuesta_27">
+                    <label for="respuesta_27">think</label>
+                </div>
+
+            </div>
+
+            <div class="question_container">
+                <p class="pregunta">10. The singer ended the concert ...... her most popular song. <span
+                        id="pregunta_10"></span></p>
+
+                <div class="answer_container">
+                    <input type="radio" name="grupo_10" value="1" id="respuesta_28">
+                    <label for="respuesta_28">with</label>
+                </div>
+
+                <div class="answer_container">
+                    <input type="radio" name="grupo_10" value="0" id="respuesta_29">
+                    <label for="respuesta_29">by</label>
+                </div>
+
+                <div class="answer_container">
+                    <input type="radio" name="grupo_10" value="0" id="respuesta_30">
+                    <label for="respuesta_30">in</label>
+                </div>
+
+            </div>
+
+            <p>Score: <span id="calificacion"></span></p>
+
+            <div class="botones">
+
+                <button class="boton" id="calificar" onclick="Calificar()">Calificar</button>
+
+            <button class="boton" id="limpiar" onclick="btnLimpiar()">Limpiar</button>
+
+            </div>
+
+        </div>
+
+
+    </main>
+
+    <footer class="footer_r">
+        <div class="footer_container">
+
+            <a href="" class="logos_redes">
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#041562" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                    <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                    <path d="M16.5 7.5l0 .01" />
+                  </svg>
+
+            </a>
+
+            <a class="cotizador_a" href="../index.html"><h2 class="titulo_t">Inicio<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="50" height="50" viewBox="0 0 24 24" stroke-width="1.5" stroke="#041562" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M5 12l-2 0l9 -9l9 9l-2 0" />
+                <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+                <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+              </svg></h2></a>
+
+            <a href="" class="logo logos_redes">
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#041562" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                  </svg>
+
+            </a>
+
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
